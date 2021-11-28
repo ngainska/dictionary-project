@@ -9,6 +9,7 @@ function handleResponse(response){
     console.log(response.data[0])
 }
 
+//documentation https://dictionaryapi.dev/
 
 function search(event){
     event.preventDefault();
