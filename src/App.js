@@ -9,7 +9,8 @@ export default function App() {
       <header className="App-header">
         <img src={bit2} className="App-logo img-fluid" alt="logo"/>
       </header>
-      <main>
+      <main className="App-main">
+        <h2 className="mb-3">Dictionary App</h2>
         <Dictionary/>
         </main>
       <footer className="App-footer">
