@@ -1,4 +1,4 @@
-import bit2 from './bit2.png';
+import bit3 from './bit3.png';
 import './App.css';
 import Dictionary from './Dictionary';
 
@@ -7,7 +7,8 @@ export default function App() {
     <div className="App">
       <div className="container">
       <header className="App-header">
-        <img src={bit2} className="App-logo img-fluid" alt="logo"/>
+        <a href="https://admiring-sinoussi-3cc72d.netlify.app/" target="_blank" rel="noreferrer"><img src={bit3} className="App-logo img-fluid" alt="logo"/></a>
+       
       </header>
       <main className="App-main">
         <h2 className="title mb-3">Dictionary App</h2>
