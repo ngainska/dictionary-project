@@ -5,10 +5,10 @@ import Snowfall from "react-snowfall"
 import ToggleSwitch from './ToggleSwitch';
 
 export default function App() {
-  
+  //const [snow, setSnow] = useState(true);
   return (
     <div><Snowfall style={{ height: 1500}} snowflakeCount={300}/>
-    <ToggleSwitch label="snow" />
+    <ToggleSwitch label="snow" snowflakeCount={300} />
     <div className="App">
       <div className="container">
       <header className="App-header">

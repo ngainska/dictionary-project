@@ -2,12 +2,16 @@
 import React from "react";
 import "./ToggleSwitch.css";
 
+function changeSnow(){
+    alert("It is snowing")
+}
 const ToggleSwitch = ({ label }) => {
   return (
+
     <div className="container">
       <div className="toggle-switch">
         <input type="checkbox" className="checkbox" 
-               name={label} id={label} />
+               name={label} id={label} onChange={changeSnow}/>
         <label className="label" htmlFor={label}>
           <span className="inner" />
           <span className="switch" />
