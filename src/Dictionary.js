@@ -4,11 +4,14 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 
+
 export default function Dictionary(props){
+    
 let [keyword, setKeyword] = useState(props.defaultKeyword);
 let [results, setResults]= useState(null);
 let [loaded,setLoaded]=useState(false);
 let [photos, setPhotos]= useState(null)
+
 
 function handleDResponse(response){
     setResults(response.data[0]);
@@ -48,6 +51,7 @@ function load(){
 setLoaded(true);
 search();
 }
+
 
 if (loaded){
 
