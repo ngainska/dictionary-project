@@ -11,6 +11,12 @@ body {
   text-align: center;
 }
 
+.App-main .title {
+  font-family: "Fredericka the Great", cursive;
+  color: white;
+  font-size: 80px;
+}
+
 .App-logo {
   max-width: 100px;
   display: block;
