@@ -1,14 +1,15 @@
-.Phonetic a {
-  text-decoration: none;
-  padding: 10px;
+.Phonetic button {
+  padding: 6px;
   font-size: 20px;
   margin-right: 10px;
   transition: all 150ms ease-in-out;
-}
-
-.Phonetic a:hover {
   background-color: #4c869e;
   border-radius: 50px;
+  border: none;
+}
+
+.Phonetic button:hover {
+  background-color: #89c8e4;
 }
 
 .Phonetic .text {
