@@ -3,7 +3,7 @@ import React from "react";
 import "./ToggleSwitch.css";
 
 function changeSnow(){
-    alert("It is snowing")
+    alert("Oh dear, it's still snowing...")
 }
 const ToggleSwitch = ({ label }) => {
   return (

@@ -1,15 +1,14 @@
+import React from 'react';
 import bit3 from './bit3.png';
 import './App.css';
 import Dictionary from './Dictionary';
-import Snowfall from "react-snowfall"
-import ToggleSwitch from './ToggleSwitch';
+
 
 export default function App() {
-  //const [snow, setSnow] = useState(true);
+ 
   return (
-    <div><Snowfall style={{ height: 1500}} snowflakeCount={300}/>
-    <ToggleSwitch label="snow" snowflakeCount={300} />
-    <div className="App">
+    <div>
+     <div className="App">
       <div className="container">
       <header className="App-header">
         <a href="https://admiring-sinoussi-3cc72d.netlify.app/" target="_blank" rel="noreferrer"><img src={bit3} className="App-logo img-fluid" alt="logo"/></a>
@@ -24,6 +23,7 @@ export default function App() {
       </div>
     </div>
     </div>
+    
   );
 }
 

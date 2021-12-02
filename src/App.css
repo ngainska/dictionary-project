@@ -22,9 +22,11 @@ body {
   max-width: 110px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 50%;
   background: none;
-  padding: 10px;
+  padding: 5px;
   transition: all 150ms ease-in-out;
 }
 .App-logo:hover {
@@ -44,11 +46,4 @@ body {
 
 .App-footer a {
   text-decoration: none;
-}
-
-.App button {
-  margin-top: 10px;
-  font-size: 50px;
-  border: none;
-  background: none;
 }

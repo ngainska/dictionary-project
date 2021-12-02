@@ -3,10 +3,9 @@ import "./Dictionary.css"
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
-
+import Snowfall from "react-snowfall"
 
 export default function Dictionary(props){
-    
 let [keyword, setKeyword] = useState(props.defaultKeyword);
 let [results, setResults]= useState(null);
 let [loaded,setLoaded]=useState(false);
@@ -51,7 +50,11 @@ function load(){
 setLoaded(true);
 search();
 }
+const [snow, setSnow] = useState(false);
 
+const toggleSnow = () => {
+  setSnow(!snow);
+};
 
 if (loaded){
 
@@ -61,6 +64,10 @@ return(
             <section>
         <form onSubmit={handleSubmit}>
             <input type="search" autoFocus={true} onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>
+            <span>
+    <button onClick={toggleSnow} title="let it snow" className="snowButton">❄</button>
+    {snow && <Snowfall style={{ height: 1500}} snowflakeCount={350}/>}
+  </span>
         </form>
         <div className="hint">
             What would you like to search for?
