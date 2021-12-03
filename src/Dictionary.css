@@ -12,6 +12,7 @@
 
 .Dictionary input {
   margin-top: 10px;
+  margin-right: -250px;
   width: 40%;
   padding: 6px 4px;
   border-radius: 5px;
@@ -25,12 +26,13 @@
 .Dictionary .snowButton {
   background: rgb(116, 190, 219);
   color: white;
-  border-radius: 20px;
-  margin-left: 10px;
+  border-radius: 50%;
+  margin-left: -350px;
   font-size: 25px;
   transition: all 300ms ease-in-out;
   border: none;
   padding: 5px;
+  width: 45px;
 }
 .Dictionary .snowButton:hover {
   color: rgb(116, 190, 219);

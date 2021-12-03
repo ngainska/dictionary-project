@@ -62,13 +62,16 @@ return(
 
         <div className="Dictionary">
             <section>
+                <div className="row">
+                    <div className="col-9">
         <form onSubmit={handleSubmit}>
-            <input type="search" autoFocus={true} onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>
-            <span>
-    <button onClick={toggleSnow} title="let it snow" className="snowButton">❄</button>
-    {snow && <Snowfall style={{ height: 1500}} snowflakeCount={350}/>}
-  </span>
-        </form>
+            <input type="search" autoFocus={true} onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/> 
+        </form> </div>
+                            <div className="col-1">
+ <button onClick={toggleSnow} title="let it snow" className="snowButton">❄</button>
+    {snow && <Snowfall style={{ height: 1500}} snowflakeCount={400}/>}
+    </div>
+    </div>
         <div className="hint">
             What would you like to search for?
         </div>
